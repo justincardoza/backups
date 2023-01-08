@@ -2,7 +2,7 @@
 
 source secret-attribute-names.sh
 
-echo "Please enter the Backblaze B2 application key ID."
+echo "Please enter the Backblaze B2 application key ID"
 secret-tool store --label='Backblaze B2 application key ID for backups' $B2_KEY_ID_ATTRIBUTES
 
 echo "Please enter the Backblaze B2 application key"

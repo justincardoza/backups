@@ -15,7 +15,7 @@ from Backblaze. I did my first rounds of backups on my old Windows system
 using the recommended environment variables and entering the `restic` password 
 at the prompt, but on Linux, I wanted to put together a more security-oriented 
 way of doing backups. Maybe it's my background in healthcare software with the 
-accompanying security requirements, but I don't feel comfortable storing  
+accompanying security requirements, but I don't feel comfortable storing 
 sensitive data like keys and passwords in plaintext, even if only `root` 
 technically has permission to access it. That only helps as long as the OS 
 is running to enforce permissions, and as long as nobody else gains `root` 
