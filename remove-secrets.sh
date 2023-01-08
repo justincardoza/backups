@@ -1,6 +1,12 @@
 #!/bin/bash
 
-source secret-attribute-names.sh
+if [[ -r secret-attribute-names.sh ]]; then
+	source secret-attribute-names.sh
+else
+	echo "Using example attribute names from secret-attribute-names-example.sh"
+	echo "Create a file named secret-attribute-names.sh to customize."
+	source secret-attribute-names-example.sh
+fi
 
 echo "Clearing secrets:"
 echo "$B2_KEY_ID_ATTRIBUTES"
